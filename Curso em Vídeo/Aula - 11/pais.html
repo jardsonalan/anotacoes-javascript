@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Qual pais você mora? <input type="text" id="txtpais">
+    <input type="button" value="Clique aqui" onclick="mypais()">
+    <div id="res"></div>
+
+    <script>
+        function mypais() {
+            var pais = document.querySelector('input#txtpais').value
+            var res = document.querySelector('div#res')
+
+            res.innerHTML = `Você é do(a) ${pais}`
+
+            if (pais == 'Brasil') {
+                res.innerHTML += '<p>Você é brasileiro</p>'
+            } else {
+                res.innerHTML += '<p>Você é estrangeiro</p>'
+            }
+        }
+    </script>
+</body>
+</html>
