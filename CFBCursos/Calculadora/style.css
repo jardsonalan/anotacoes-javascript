@@ -6,13 +6,6 @@
     font-size: large;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
 .dflex {
     display: flex;
     justify-content: center;
@@ -20,6 +13,21 @@ body {
 }
 
 .calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    left: -230px;
+    transition: all 0.2s;
+}
+
+.calc-exibir {
+    left: 0px !important;
+    transition: all 0.2s;
+}
+
+.calc-principal {
     flex-direction: column;
     background-color: #eee;
     border: 3px solid #bbb;
@@ -64,4 +72,15 @@ body {
 .tecla-op {
     background-color: #f44 !important;
     border-color: #800 !important;
+}
+
+.calc-aba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
 }

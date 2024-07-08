@@ -5,36 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <div id="calc" class="calc dflex">
-        <div id="div-nome" class="div-nome dflex">
-            <p>Calculadora</p>
+        <div id="calc-principal" class="calc-principal">
+            <div id="div-nome" class="div-nome dflex">
+                <p>Calculadora</p>
+            </div>
+            <div id="div-display" class="div-display dflex">
+                <p id="display" class="display">0</p>
+            </div>
+            <div id="div-teclas" class="div-teclas dflex">
+                <button id="tcpy" class="tecla dflex tecla-op">CPY</button>
+                <button id="tlimpar" class="tecla dflex">CL</button>
+                <button id="tright" class="tecla dflex num">(</button>
+                <button id="tleft" class="tecla dflex num">)</button>
+                <button id="t7" class="tecla dflex num">7</button>
+                <button id="t8" class="tecla dflex num">8</button>
+                <button id="t9" class="tecla dflex num">9</button>
+                <button id="tsoma" class="tecla dflex tecla-op op">+</button>
+                <button id="t4" class="tecla dflex num">4</button>
+                <button id="t5" class="tecla dflex num">5</button>
+                <button id="t6" class="tecla dflex num">6</button>
+                <button id="tsub" class="tecla dflex tecla-op op" op>-</button>
+                <button id="t1" class="tecla dflex num">1</button>
+                <button id="t2" class="tecla dflex num">2</button>
+                <button id="t3" class="tecla dflex num">3</button>
+                <button id="tmult" class="tecla dflex tecla-op op">x</button>
+                <button id="t0" class="tecla dflex num">0</button>
+                <button id="tseparador" class="tecla dflex num">,</button>
+                <button id="tigual" class="tecla dflex tecla-op res">=</button>
+                <button id="tdivi" class="tecla dflex tecla-op op">/</button>
+            </div>
         </div>
-        <div id="div-display" class="div-display dflex">
-            <p id="display" class="display">0</p>
-        </div>
-        <div id="div-teclas" class="div-teclas dflex">
-            <button id="ton" class="tecla dflex tecla-op">ON</button>
-            <button id="tlimpar" class="tecla dflex">CL</button>
-            <button id="tright" class="tecla dflex num">(</button>
-            <button id="tleft" class="tecla dflex num">)</button>
-            <button id="t7" class="tecla dflex num">7</button>
-            <button id="t8" class="tecla dflex num">8</button>
-            <button id="t9" class="tecla dflex num">9</button>
-            <button id="tsoma" class="tecla dflex tecla-op op">+</button>
-            <button id="t4" class="tecla dflex num">4</button>
-            <button id="t5" class="tecla dflex num">5</button>
-            <button id="t6" class="tecla dflex num">6</button>
-            <button id="tsub" class="tecla dflex tecla-op op" op>-</button>
-            <button id="t1" class="tecla dflex num">1</button>
-            <button id="t2" class="tecla dflex num">2</button>
-            <button id="t3" class="tecla dflex num">3</button>
-            <button id="tmult" class="tecla dflex tecla-op op">x</button>
-            <button id="t0" class="tecla dflex num">0</button>
-            <button id="tseparador" class="tecla dflex num">,</button>
-            <button id="tigual" class="tecla dflex tecla-op res">=</button>
-            <button id="tdivi" class="tecla dflex tecla-op op">/</button>
+        <div id="calc-aba" class="calc-aba">
+            <span class="material-symbols-outlined" id="arrow">
+                arrow_right
+            </span>
         </div>
     </div>
 
