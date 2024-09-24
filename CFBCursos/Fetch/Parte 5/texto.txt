@@ -1,0 +1,5 @@
+{
+    "canal": "YouTube",
+    "nome": "Jardson",
+    "curso": "JavaScript"
+}
